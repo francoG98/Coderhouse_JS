@@ -1,22 +1,34 @@
+const opcionSalir = 5;
 let nombreDJ = prompt('Como es tu nombre?');
-let genero = prompt("Cual género pensas tocar ? (Elegir entre 'Tech House', 'Melodic Techno', 'Psytrance', 'EDM')");
-let duracionDelSet = prompt('Cuantos minutos tiene que durar el set?');
+let duracionDelSet = parseInt(prompt('Cuantos minutos tiene que durar el set?'));
+let genero = parseInt(prompt("Cual género pensas tocar ? \n 1- Tech House, \n 2- Melodic Techno, \n 3- Psytrance, \n 4- EDM, \n 5- SALIR"));
+
 
 function cantidadDeCanciones(duracionDelSet, genero){
-   if (genero == "Tech House"){
-    let resultado = duracionDelSet / 6;
-    return alert("Hola " + nombreDJ + ", tu set de " + genero + " debe tener aproximadamente " + resultado + " canciones. Gracias!")} 
-   else if (genero == "Melodic Techno"){
-    let resultado = duracionDelSet / 7;
-    return alert("Hola " + nombreDJ + ", tu set de " + genero + " debe tener aproximadamente " + resultado + " canciones. Gracias!")}
-   else if (genero == "Psytrnace"){
-    let resultado = duracionDelSet / 5;
-    return alert("Hola " + nombreDJ + ", tu set de " + genero + " debe tener aproximadamente " + resultado + " canciones. Gracias!")}
-   else if (genero == "EDM"){
-    let resultado = duracionDelSet / 4;
-    return alert("Hola " + nombreDJ + ", tu set de " + genero + " debe tener aproximadamente " + resultado + " canciones. Gracias!")}
-   else {
-    return alert("Por favor escribir el genero como figura en los ejemplos.")
-   }
+   while (genero != opcionSalir){
+      switch (genero){
+         case 1:
+            alert("Hola " + nombreDJ + ", tu set de Tech House debe tener aproximadamente " + duracionDelSet / 6 + " canciones. Gracias!");
+            genero= parseInt(prompt("Que deseas hacer ? Elegir otro género para tu set ? \n 1- Tech House, \n 2- Melodic Techno, \n 3- Psytrance, \n 4- EDM o \n 5- SALIR"));
+            break;
+         case 2:
+            alert("Hola " + nombreDJ + ", tu set de Melodic Techno debe tener aproximadamente " + duracionDelSet / 7 + " canciones. Gracias!");
+            genero= parseInt(prompt("Que deseas hacer ? Elegir otro género para tu set ? \n 1- Tech House, \n 2- Melodic Techno, \n 3- Psytrance, \n 4- EDM o \n 5- SALIR"));
+            break;
+         case 3:
+            alert("Hola " + nombreDJ + ", tu set de Psytrance debe tener aproximadamente " + duracionDelSet / 5 + " canciones. Gracias!");
+            genero= parseInt(prompt("Que deseas hacer ? Elegir otro género para tu set ? \n 1- Tech House, \n 2- Melodic Techno, \n 3- Psytrance, \n 4- EDM o \n 5- SALIR"));
+            break;
+         case 4:
+            alert("Hola " + nombreDJ + ", tu set de EDM debe tener aproximadamente " + duracionDelSet / 4 + " canciones. Gracias!");
+            genero= parseInt(prompt("Que deseas hacer ? Elegir otro género para tu set ? \n 1- Tech House, \n 2- Melodic Techno, \n 3- Psytrance, \n 4- EDM o \n 5- SALIR"));
+            break;
+         default:
+            alert("Por favor elegir un género. \n 1- Tech House , \n 2- Melodic Techno , \n 3- Psytrance, \n 4- EDM, \n 5- SALIR");
+            genero = parseInt(prompt("Cual género pensas tocar ? \n 1- Tech House , \n 2- Melodic Techno , \n 3- Psytrance, \n 4- EDM, \n 5- SALIR)"))
+            break;
+      }}
+   alert("Gracias por su visita, vuelva pronto!");   
 }
+
 cantidadDeCanciones(duracionDelSet, genero); 
