@@ -1,8 +1,8 @@
+
 const opcionSalir = 5;
 let nombreDJ = prompt('Como es tu nombre?');
 let duracionDelSet = parseInt(prompt('Cuantos minutos tiene que durar el set?'));
 let genero = parseInt(prompt("Cual género pensas tocar ? \n 1- Tech House, \n 2- Melodic Techno, \n 3- Psytrance, \n 4- EDM, \n 5- SALIR"));
-
 
 function cantidadDeCanciones(duracionDelSet, genero){
    while (genero != opcionSalir){
@@ -31,4 +31,16 @@ function cantidadDeCanciones(duracionDelSet, genero){
    alert("Gracias por su visita, vuelva pronto!");   
 }
 
-cantidadDeCanciones(duracionDelSet, genero); 
+class set {
+   constructor(nombreDJ, genero, duracionDelSet) {
+      this.nombreDJ = nombreDJ.toUpperCase();
+      this.genero = genero.toUpperCase();
+      this.duracionDelSet = parseIn(duracionDelSet)
+   }
+}
+
+const consultas = [];
+consultas.push(new set(nombreDJ, genero, duracionDelSet));
+
+cantidadDeCanciones(duracionDelSet, genero);
+ 

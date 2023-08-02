@@ -1,0 +1,97 @@
+@import "colors";
+@import "main";
+
+*{
+    background-color: $myBlack;
+}
+a{
+    text-decoration: none;
+    color: $myGrey;
+}
+header{
+    background-color: $myBlack;
+    margin: 2.5vh 5vw;
+    .header{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
+        .logo{
+            width: 35vw;
+            color: $mySalmon;
+            font-family: 'Lumanosimo', cursive;
+            font-size: 48px;
+        }
+        .navbar-top{
+            width: 65vw;
+            padding: 0px;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            list-style: none;
+            align-items: center;
+            .nav-item{
+                font-size: 32px;
+                .nav-link{
+                    text-decoration: none;
+                    color: $myGrey;
+                    transition: all 1.5s;
+                        &:hover{
+                            color: $mySalmon;
+                            font-size: 48px;
+                        }
+                }
+            }
+        }
+    }
+       
+}
+footer{
+    margin-top: 3vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    .navbar-footer{
+        width: 30vw;
+        display: flex;
+        justify-content: center;
+        .navbar-bottom{
+            list-style: none;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            padding: 0px;
+            .li-footer{
+                margin-bottom: 2vh;
+                width: 100%;
+                font-size: 1.5rem;
+                text-align: center;
+            }
+        }
+    }
+    .logo-footer{
+        display: flex;
+        justify-content: center;
+        width: 30vw;
+        .text-logo-footer{
+            color: $mySalmon;
+            font-family: 'Lumanosimo', cursive, bold;
+            font-size: 3rem;
+        }
+    }
+    .p-footer{
+        width: 30vw;
+        color: $myGrey;
+        font-size: 1rem;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        .text_footer{
+            text-align: center;
+        }
+    }    
+}
