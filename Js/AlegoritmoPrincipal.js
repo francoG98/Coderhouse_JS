@@ -31,16 +31,20 @@ function cantidadDeCanciones(duracionDelSet, genero){
    alert("Gracias por su visita, vuelva pronto!");   
 }
 
-class set {
+class Set {
    constructor(nombreDJ, genero, duracionDelSet) {
       this.nombreDJ = nombreDJ.toUpperCase();
-      this.genero = genero.toUpperCase();
-      this.duracionDelSet = parseIn(duracionDelSet)
+      this.genero = genero;
+      this.duracionDelSet = duracionDelSet;
+   }
+   hablar(){
+      console.log("Hola, soy el set de" + this.nombreDJ + " y duro" + this.duracionDelSet)
    }
 }
 
 const consultas = [];
-consultas.push(new set(nombreDJ, genero, duracionDelSet));
+consultas.push(new Set(nombreDJ, genero, duracionDelSet));
 
 cantidadDeCanciones(duracionDelSet, genero);
+console.log( consultas.length );
  
