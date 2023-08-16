@@ -45,6 +45,9 @@ class Set {
 const consultas = [];
 consultas.push(new Set(nombreDJ, genero, duracionDelSet));
 
-cantidadDeCanciones(duracionDelSet, genero);
-console.log( consultas.length );
- 
+cantidadDeCanciones(duracionDelSet, genero); 
+const setsDeTH = consultas.filter((el) => el.genero == 1);
+const setsDeMT = consultas.filter((el) => el.genero == 2);
+const setsDePsy = consultas.filter((el) => el.genero == 3);
+const setsDeEDM = consultas.filter((el) => el.genero == 4);
+

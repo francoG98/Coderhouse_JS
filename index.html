@@ -30,6 +30,36 @@
         <section class="foto-main">
             <img class="img-main" src="source/printworks.png" alt="foto-main">
         </section>
+        <section>
+            <form class="contact-form" method="post" action="">
+                <fieldset>
+                    <legend class="legend-form">Hola! Dejanos ayudarte con el armado de tu set.</legend>
+
+                    <div>
+                        <label class="label-form" for="Nombre del DJ"> Nombre del DJ: </label>
+                        <input class="input-form" type="text">
+                    </div>
+                    <div>
+                        <label class="label-form" for="géneros"> Qué Género pensas tocar ? </label>
+                        <input list="generos" name="generos">
+                        <datalist id="generos">
+                            <option value="Tech House">
+                            <option value="Melodic Techno">
+                            <option value="Psytrance">
+                            <option value="EDM">
+                        </datalist>
+                    </div>
+                    <div>
+                        <label class="label-form" for="duración"> Cuantos minutos tiene que durar tu set ? </label>
+                        <input class="input-form" type="number">
+                    </div>
+                    <div class="form_buttons">
+                        <input class="btn btn-dark" type="submit">
+                        <input class="btn btn-reset" type="reset">
+                    </div>
+                </fieldset>
+            </form>
+        </section>
     </main>
     <footer>
         <div class="navbar-footer">
