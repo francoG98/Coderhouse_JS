@@ -7,10 +7,10 @@
     <title>DJ Seter</title>
 </head>
 <body>
-    <script src="Js/alegoritmoPrincipal.js"></script>
+    <!--<script src="Js/alegoritmoPrincipal.js"></script>-->
     <header>
         <section class="header">
-            <h1 class="logo">DJ SETER</h1>
+            <h1 class="logo"><a class="link-h1" href="index.html"> DJ SETER </a></h1>
             <nav class="navbar">
                 <ul class="navbar-top">
                     <li class="nav-item">
@@ -30,18 +30,17 @@
         <section class="foto-main">
             <img class="img-main" src="source/printworks.png" alt="foto-main">
         </section>
-        <section>
+        <section class="dj-form">
             <form class="contact-form" method="post" action="">
-                <fieldset>
-                    <legend class="legend-form">Hola! Dejanos ayudarte con el armado de tu set.</legend>
-
-                    <div>
+                <fieldset class="form-fieldset">
+                    <legend class="legend-form">Hola! Dejanos ayudarte con el armado de tu set. Poné tu nombre, el género que vas a tocar y la cantidad de minutos que debe durar el set y te decimos cuantas canciones deberías usar. </legend>
+                    <div class="section-nombre-dj">
                         <label class="label-form" for="Nombre del DJ"> Nombre del DJ: </label>
-                        <input class="input-form" type="text">
+                        <input class="input-form" id="nombreDJ" type="text">
                     </div>
-                    <div>
+                    <div class="section-genero">
                         <label class="label-form" for="géneros"> Qué Género pensas tocar ? </label>
-                        <input list="generos" name="generos">
+                        <input class="input-form" list="generos" name="generos">
                         <datalist id="generos">
                             <option value="Tech House">
                             <option value="Melodic Techno">
@@ -49,9 +48,9 @@
                             <option value="EDM">
                         </datalist>
                     </div>
-                    <div>
+                    <div class="section-duracion">
                         <label class="label-form" for="duración"> Cuantos minutos tiene que durar tu set ? </label>
-                        <input class="input-form" type="number">
+                        <input class="input-form" id="duracionDelSet" type="number">
                     </div>
                     <div class="form_buttons">
                         <input class="btn btn-dark" type="submit">
@@ -83,6 +82,5 @@
             <p class="text_footer"> Suerte en tu próximo show! </p> 
         </div>   
     </footer>
-
 </body>
 </html>

@@ -1,5 +1,6 @@
 @import "colors";
 @import "main";
+@import "contact-main";
 
 *{
     background-color: $myBlack;
@@ -18,9 +19,11 @@ header{
         align-items: center;
         .logo{
             width: 35vw;
-            color: $mySalmon;
             font-family: 'Lumanosimo', cursive;
             font-size: 48px;
+            .link-h1{
+                color: $mySalmon;
+            }
         }
         .navbar-top{
             width: 65vw;
