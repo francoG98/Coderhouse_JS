@@ -191,31 +191,15 @@ header {
   header .header {
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
+    justify-content: center;
     align-items: center; }
     header .header .logo {
       width: 35vw;
       font-family: 'Lumanosimo', cursive;
-      font-size: 48px; }
+      font-size: 48px;
+      text-align: center; }
       header .header .logo .link-h1 {
         color: #F25D61; }
-    header .header .navbar-top {
-      width: 65vw;
-      padding: 0px;
-      display: flex;
-      flex-direction: row;
-      justify-content: space-between;
-      list-style: none;
-      align-items: center; }
-      header .header .navbar-top .nav-item {
-        font-size: 32px; }
-        header .header .navbar-top .nav-item .nav-link {
-          text-decoration: none;
-          color: #a5a5a5;
-          transition: all 1.5s; }
-          header .header .navbar-top .nav-item .nav-link:hover {
-            color: #F25D61;
-            font-size: 48px; }
 
 footer {
   margin-top: 3vh;
@@ -223,32 +207,16 @@ footer {
   flex-direction: row;
   justify-content: space-evenly;
   align-items: center; }
-  footer .navbar-footer {
-    width: 30vw;
-    display: flex;
-    justify-content: center; }
-    footer .navbar-footer .navbar-bottom {
-      list-style: none;
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      align-items: center;
-      padding: 0px; }
-      footer .navbar-footer .navbar-bottom .li-footer {
-        margin-bottom: 2vh;
-        width: 100%;
-        font-size: 1.5rem;
-        text-align: center; }
   footer .logo-footer {
     display: flex;
     justify-content: center;
-    width: 30vw; }
+    width: 45vw; }
     footer .logo-footer .text-logo-footer {
       color: #F25D61;
       font-family: 'Lumanosimo', cursive, bold;
       font-size: 3rem; }
   footer .p-footer {
-    width: 30vw;
+    width: 45vw;
     color: #a5a5a5;
     font-size: 1rem;
     display: flex;
